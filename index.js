@@ -4,17 +4,21 @@ simpleGit = require('simple-git'),
 repoPath = '/home/stefan/Develop/wl/archive/sprintScript',
 git = simpleGit(repoPath, { binary: 'git' }),
 
-localBranches = [],
-remoteBranches = [];
+localBranches = ['test1', 'test2', 'test3', 'test4'],
+remoteBranches = ['test1', 'test2', 'test3', 'test4'],
+mixedBranches = [];
 
 clear()
 
-async function deleteBranch () {
+async function deleteBranch (branch) {
   try {
   // await git.pull()
   // await git.deleteLocalBranches('to-deletely')
-  await git.deleteLocalBranch('to-deletely', true)
-  await git.push('origin', 'to-deletely', ['-d'])
+  await git.deleteLocalBranch(branch, true)
+  console.log(`Local branch \'${branch}\' is deleted`)
+  await git.push('origin', branch, ['-d'])
+  console.log(`Remote branch \'${branch}\' is deleted`)
+  
   console.log('Done')
   
   }
@@ -24,4 +28,9 @@ async function deleteBranch () {
   }
 }
 
-deleteBranch()
+for (const branch of remoteBranches) {
+  // console.log(branch)
+  deleteBranch(branch)
+}
+
+// deleteBranch()
