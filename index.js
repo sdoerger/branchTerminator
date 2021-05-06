@@ -4,13 +4,15 @@ const { clear } = require('console'),
   // repoPath = '/home/mypath/to/my/git-repository',
   repoPath = '/home/stefan/Develop/wl/archive/sprintScript',
   git = simpleGit(repoPath, { binary: 'git' }),
-  branches = ['test1234'],
+  branches = ['test-2'],
   option = 'both';
 // options: 'local', 'remote', 'both'
 
 clear();
 
 async function deleteBranch(branch, option) {
+  console.log('... searching for branches ...')
+  
   const errorMessage = (branch, type, extra = '') =>
     console.log(
       `Error: Branch ${branch} does not exist ${type}${extra}.`
