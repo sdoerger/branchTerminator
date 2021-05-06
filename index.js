@@ -4,9 +4,9 @@ simpleGit = require('simple-git'),
 repoPath = '/home/stefan/Develop/wl/archive/sprintScript',
 git = simpleGit(repoPath, { binary: 'git' }),
 
-localBranches = ['test1', 'test2', 'test3', 'test4'],
-remoteBranches = ['test1', 'test2', 'test3', 'test4'],
-mixedBranches = [];
+// localBranches = ['test1', 'test2', 'test3', 'test4'],
+// remoteBranches = ['test1', 'test2', 'test3', 'test4'],
+branches = [];
 
 clear()
 
