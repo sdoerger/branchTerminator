@@ -3,7 +3,6 @@ const { clear } = require('console'),
   simpleGit = require('simple-git'),
   prompt = require('prompt-sync')()
   // repoPath = '/home/mypath/to/my/git-repository',
-  // repoPath = '/home/stefan/Develop/wl/archive/sprintScript',
   // branches = ['test1234'],
   // option = 'both';
 // options: 'local', 'remote', 'both'
