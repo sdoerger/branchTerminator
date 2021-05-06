@@ -17,7 +17,7 @@ async function deleteBranch () {
   // await git.pull()
   // await git.deleteLocalBranches('to-deletely')
   await git.deleteLocalBranch('to-deletely', true)
-  // await git.push('origin', 'to-deletely', ['-d'])
+  await git.push('origin', 'to-deletely', ['-d'])
   console.log('Done')
   
   }
