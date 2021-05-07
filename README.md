@@ -1,4 +1,4 @@
-<p align="center"><img align="center" src="https://images.unsplash.com/photo-1551281306-0d52288970ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHJvYm90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="120px" width="150px" style="object-fit: cover; object-position: center -65px"></p>
+<p align="center"><img align="center" src="https://images.unsplash.com/photo-1551281306-0d52288970ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fHJvYm90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" height="auto" width="150px" style="object-fit: cover; object-position: center -65px"></p>
 
 # Branch Terminator
 
@@ -38,7 +38,9 @@ Alternatively, to only delete remote branchs, comment out, like this:
 ## Start script
 
 Go into this script folder and run the script by
+`npm terminate`
+or
 `node index.js`
 
-Or in watchmode
+or in watchmode
 `npm start`
