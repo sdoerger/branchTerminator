@@ -23,17 +23,8 @@ Of the desired repo in variable repoPath, i. e.:
 Add into the array, all branches you want to delete from your local machine and remote, i. e.:
 `branches = ['test1', 'test2', 'test3', 'test4'];`
 
-Alternatively, to only delete local branchs, comment out, like this:
-```javascript
-// await git.push('origin', branch, ['-d'])
-// console.log(`Remote branch \'${branch}\' is deleted`)
-```
-
-Alternatively, to only delete remote branchs, comment out, like this:
-```javascript
-// await git.deleteLocalBranch(branch, true)
-// console.log(`Local branch \'${branch}\' is deleted`)
-```
+### Set options
+Options: 'local', 'remote', 'both'
 
 ## Start script
 
