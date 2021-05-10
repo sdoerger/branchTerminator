@@ -24,7 +24,7 @@ Add into the array, all branches you want to delete from your local machine and 
 `branches = ['test1', 'test2', 'test3', 'test4'];`
 
 ### Set options
-Options: 'local', 'remote', 'both'
+Options: 'local', 'remote' or 'both'
 
 ## Start script
 
